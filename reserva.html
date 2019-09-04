@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Pousada Recanto da Natureza</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <ul id="menu">
+                <li>
+                    <a href="index.html">Principal</a>
+                </li>
+                <li>
+                    <a href="hospedagens.html">Hospedagens</a>
+                </li>
+                <li>
+                    <a href="reserva.html">Reserva</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+            <div class="col-sm-12">
+                <div class="row">
+        <img src="logo.jpg" alt="logo" id="logo">
+        <h1>Pousada Recanto da Natureza</h1>
+        <h4>Um lugar para você descansar</h4>
+    </div>
+    </div>
+    </div>
+    
+    <fieldset>
+
+            <legend>Faça sua Reserva: </legend>
+            <form>
+                <p>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" autofocus requeried placeholder="Digite seu nome completo">
+                </p>
+                <p>
+                    <label for="email">E-mail:</label>
+                    <input type="text" id="email" required>
+    
+                </p>
+                <p>
+                    <label for="curso">Quarto:</label>
+                    <input type="text" id="quarto" list="lista_quartos">
+                </p>
+                <datalist id="lista_quartos">
+                    <option value="Individual">Individual</option>
+                    <option value="Casal">Casal</option>
+                    <option value="Suite">Suite</option>
+                </datalist>
+                <p>
+                    <label for="fone">Telefone:</label>
+                    <input type="text" id="fone" required>
+    
+                </p>
+    
+              
+    
+                <p>
+                    <label for="sexo">Sexo:</label>
+                    <input type="radio" name="sexo" id="sexom">Masculino
+                    <input type="radio" name="sexo" id="sexof">Feminino
+    
+                </p>
+    
+                <p>
+                    <label for="adicionais">Adicionais: </label>
+                    <input type="checkbox" id="vendas">All Inclused(Almoço,Jantar e Serviço de Quarto) R$120,00 p/dia.
+                    <input type="checkbox" id="rh">Passeio a Cavalo R$:50,00
+    
+                </p>
+                <p>
+                    <label for="obs">OBS: </label>
+                    <textarea id="obs" cols="50" rows="5"></textarea>
+                </p>
+    
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </form>
+        </fieldset>
+    </body>
+</body>
+</html>
